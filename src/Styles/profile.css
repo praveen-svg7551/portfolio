@@ -10,9 +10,8 @@
 }
 
 #profile-img {
-    border-top-left-radius: 50%;
-    border-bottom-right-radius: 50%;
-    border: 5px solid #e0aaff;
+    border-radius:50;
+    border: 2px solid #e0aaff;
   
     width: 100%;
     max-width: 400px;
