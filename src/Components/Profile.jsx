@@ -32,7 +32,7 @@ const Profile = () => {
 
 
             <div className="download">
-                    <a href="/assets/resume2.pdf" download class="download-btn">Download Resume / CV </a>
+                    <a href="/assets/ATS-resume.pdf" download class="download-btn">Download Resume / CV </a>
                     <a href="https://wa.me/9440825680" class="download-btn">Contact</a>
                 </div>
 
