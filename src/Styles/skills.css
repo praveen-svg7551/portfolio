@@ -1,56 +1,60 @@
- .skills-container{
-         display: flex;
+ .skills-container {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+
+
+ }
+
+ .skills {
+     margin: 5px;
+     padding: 10px;
+     border: 1px solid rgb(255, 255, 255);
+     border-radius: 5px;
+ }
+
+
+
+ .about-me-div {
+     display: flex;
+
+     flex-wrap: nowrap;
+     justify-content: flex-start;
+     gap: 2rem;
+     padding: 2rem;
+     color: #e0aaff;
+
+     border-radius: 10px;
+     margin: 2rem auto;
+     max-width: 1200px;
+ }
+
+ .about {
+     max-width: 600px;
+ }
+
+ .about h2 {
+     color: orange;
+     margin-bottom: 1rem;
+ }
+
+ .about-me {
+     font-size: 1.1rem;
+ }
+
+ .view-button:hover {
+     opacity: 0.9;
+ }
+
+ @media (max-width: 768px) {
+     .about-me-div {
+
+         font-size: medium;
          flex-wrap: wrap;
-         justify-content: space-between;
-        
 
-    }
-    .skills{
-        margin: 5px;
-         padding: 10px;
-         border: 1px solid rgb(255, 255, 255);
-         border-radius: 5px;
-    }
+     }
 
-
-
-.about-me-div {
-    display: flex;
-    
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    gap: 2rem;
-    padding: 2rem;
-    color: #e0aaff;
-   
-    border-radius: 10px;
-    margin: 2rem auto;
-    max-width: 1200px;
-}
-.about {
-    max-width: 600px;
-}
-
-.about h2 {
-    color: orange;
-    margin-bottom: 1rem;
-}
-
-.about-me {
-    font-size: 1.1rem;
-}
-
-.view-button:hover {
-    opacity: 0.9;
-}
-@media (max-width: 768px){
-    .about-me-div {
-
-    font-size: medium;
-    flex-wrap: wrap;
-   
-}
-.about-me{
-    font-size: small;
-}
-}
+     .about-me {
+         font-size: medium;
+     }
+ }

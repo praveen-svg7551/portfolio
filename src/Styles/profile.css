@@ -1,7 +1,7 @@
 .image-div {
-    
+
     display: flex;
-   place-self: center;
+    place-self: center;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
@@ -10,9 +10,9 @@
 }
 
 #profile-img {
-    border-radius:50%;
+    border-radius: 50%;
     border: 2px solid white;
-  
+
     width: 100%;
     max-width: 400px;
     height: auto;
@@ -37,16 +37,18 @@
 
 
 .web-dev {
- color: orange;
+    font: sans-serif;
+    font-weight: bold;
+    color: orange;
     position: relative;
     display: inline-block;
-    background: linear-gradient(45deg, #e0aaff, #ff0054, #ff0054);
+    background: linear-gradient(90deg, #fbffaa, #ff8383, #ff0054);
     background-size: 200%;
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    animation: shine 2s linear infinite;
-   
+    animation: shine 5s linear infinite;
+
 }
 
 
@@ -104,25 +106,27 @@
     inset: 0;
     pointer-events: none;
 }
-.download{
+
+.download {
     display: flex;
     justify-content: center;
     gap: 10px;
 }
-.download-btn{
+
+.download-btn {
     color: white;
     background: linear-gradient(to right, #ff0054, #5a189a);
-  border: #e0aaff 1px solid;
-  
-  border-bottom-right-radius: 20px;
-  border-top-left-radius: 20px;
-    
+    border: #e0aaff 1px solid;
+
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+
     padding: 10px;
-    
+
     text-decoration: unset;
-   margin-top: 20px;
-  width: 300px;
- text-align: center;
+    margin-top: 20px;
+    width: 300px;
+    text-align: center;
 }
 
 
@@ -161,22 +165,46 @@
 
 
 @keyframes shine {
- 0% { background-position: 0% 100%; }
-    100% { background-position: 200% 0%; }
+    0% {
+        background-position: 0% 100%;
+    }
+
+    100% {
+        background-position: 200% 0%;
+    }
 }
 
-
-@media (max-width: 768px) {
+ @media (max-width: 768px) {
     #typing-text {
-        font-size: 1.5rem;
+         font-size: 1.5rem; 
 
     }
-    #profile-img{
-        height: 300px;
-        place-self: center;
-        margin-top: 30px;
+
+    #profile-img {
+         height: 300px; 
+         place-self: center; 
+         margin-top: 30px; 
+    }
+    .scroll-eff {
+        font-size: 1.8rem; /* Slightly smaller base text */
     }
 
-}
+    .scroll-eff > span {
+        height: 1.2em; /* Reduce the fixed height of the scroller */
+        line-height: 1.2em;
+    }
+
+    .scroll-eff > span > span {
+        font-size: 0.9em; /* Slightly shrink the animated words */
+        white-space: nowrap; /* Prevent wrapping mid-word */
+    }
+
+    /* Optional: make words stack better if still tight */
+    .scroll-eff > span > span:nth-child(2) { /* GRAPHIC DESIGNER - longest */
+        font-size: 0.8em;
+        letter-spacing: 0.5px;
+    }
+
+} 
 
 @media (min-width: 1024px) {}
