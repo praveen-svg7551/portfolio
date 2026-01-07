@@ -5,17 +5,19 @@ import Skills from './Components/Skills'
 import Projects from './Components/Projects'
 import FooterApp from './Components/FooterApp'
 import Contact from './Components/Contact'
-import Certificates from './Components/Certificates'
+
 import Exp from './Components/Exp'
+import BackgroundVideo from './Components/BackgroundVideo';
 
 
 const App = () => {
   return (
     <div className='margin'>
+      <BackgroundVideo/>
      <Navbar/>
      <Profile/>
      <Skills/>
-     <Certificates/>
+    
      <Projects/>
      <Exp/>
     

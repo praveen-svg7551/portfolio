@@ -1,14 +1,14 @@
-body {
+/* body {
     font-family: Arial, sans-serif;
     color: #e0aaff;
     background: #10002b;
     line-height: 1.6;
     margin: 0;
-}
+} */
 
 /* Header and Navigation */
 header {
-    background: linear-gradient(135deg, #240046, #5a189a);
+    background: linear-gradient(135deg, #000000, #9929EA);
     padding: 1rem;
 }
 
@@ -22,9 +22,10 @@ header {
 }
 
 .logo {
+    font-family: 'Arial Black', sans-serif;
     text-transform: uppercase;
     font-weight: bold;
-    color: #e0aaff;
+    color: #ffb300;
     font-size: 1.5rem;
     cursor: pointer;
 }
