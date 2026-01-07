@@ -17,13 +17,7 @@ const Profile = () => {
                     <p class="scroll-eff">
                         I am a,
                         <span>
-                            <span>WEB DEVELOPER</span>
-                            <span>GRAPHIC DESIGINER</span>
-                            <span>PROGRAMMER</span>
-                            <span>SOFTWARE DEVELOPER</span>
-                    
-                           
-                            
+
                         </span>
                     </p>
                 </section>
