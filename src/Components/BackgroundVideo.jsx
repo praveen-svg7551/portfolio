@@ -1,25 +1,33 @@
 import { useEffect, useRef } from "react";
 import "../Styles/BackgroundVideo.css";
+import LiquidEther from '../LiquidEther';
 
 export default function BackgroundVideo() {
-  const videoRef = useRef(null);
+  
 
-  useEffect(() => {
-    if (videoRef.current) {
-      videoRef.current.playbackRate = 0.5; // slow motion
-    }
-  }, []);
 
   return (
-    <video
-      ref={videoRef}
-      autoPlay
-      muted
-      loop
-      playsInline
-      className="bg-video"
-    >
-      <source src="./assets/video.mp4" type="video/mp4" />
-    </video>
+    <div style={{ width: '100%', height: '100%', position: 'relative' }}>
+  <LiquidEther
+    colors={[ '#5227FF', '#FF9FFC', '#B19EEF' ]}
+    mouseForce={20}
+    cursorSize={100}
+    isViscous
+    viscous={30}
+    iterationsViscous={32}
+    iterationsPoisson={32}
+    resolution={0.5}
+    isBounce={false}
+    autoDemo
+    autoSpeed={0.5}
+    autoIntensity={2.2}
+    takeoverDuration={0.25}
+    autoResumeDelay={3000}
+    autoRampDuration={0.6}
+    color0="#5227FF"
+    color1="#FF9FFC"
+    color2="#B19EEF"
+/>
+</div>
   );
 }

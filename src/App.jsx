@@ -13,19 +13,21 @@ import BackgroundVideo from './Components/BackgroundVideo';
 const App = () => {
   return (
     <div className='margin'>
-      <BackgroundVideo/>
-     <Navbar/>
-     <Profile/>
-     <Skills/>
-    
-     <Projects/>
-     <Exp/>
-    
-     
-     <Contact/>
-     <FooterApp/>     
-     
-     
+      <div className="bg-layer">
+        <BackgroundVideo />
+      </div>
+
+      <div className="main-content">
+        <Navbar />
+        <Profile />
+        <Skills />
+        <Projects />
+        <Exp />
+        <Contact />
+        <FooterApp />
+      </div>
+
+
 
     </div>
   )
