@@ -5,7 +5,6 @@ import Skills from './Components/Skills'
 import Projects from './Components/Projects'
 import FooterApp from './Components/FooterApp'
 import Contact from './Components/Contact'
-
 import Exp from './Components/Exp'
 import BackgroundVideo from './Components/BackgroundVideo';
 

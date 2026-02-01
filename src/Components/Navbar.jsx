@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import '../Styles/navbar.css';
 import ReactPopUp from './ReactPopUp';
+import { Link } from "react-router-dom";
 
 
 const Navbar = () => {
@@ -22,8 +23,8 @@ const Navbar = () => {
                         <li><a href="#home">Home</a></li>
                         <li><a href="#about">About</a></li>
                         <li><a href="#about">Skills</a></li>
-                        <li><a href="#contact">Photos</a></li>
-                        <li><a href="#contact">Videos</a></li>
+                        <li><a href="https://drive.google.com/drive/folders/1MCToyoD34Mv0FJAFDK2ukpdDGMqraFa3?usp=sharing">Photos</a></li>
+                        <li><a href="https://drive.google.com/drive/folders/1DKvx5PYXDBSyn40_ISrc9B8uLSHfxC25?usp=sharing">Videos</a></li>
                         <li><a href="#contact">Contact</a></li>
 
                     </ul>
